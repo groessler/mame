@@ -2764,6 +2764,9 @@ santam                          // Santa Maria
 shpinxii                        // Sphinx II
 splmastr                        // Spell Master
 tajmah                          // Tajmahal
+atrwild
+atricmon
+atrbonpk
 
 @source:att4425.cpp
 att4425                         //
@@ -9027,6 +9030,7 @@ agress                          // TA-0029 (c) 1991 Palco
 agressb                         // TA-0029 (c) 1991 Palco
 blockout                        // TA-0029 (c) 1989 + California Dreams
 blockout2                       // TA-0029 (c) 1989 + California Dreams
+blockout3                       // TA-0029 (c) 1989 + California Dreams (Europe and Oceania)
 blockoutj                       // TA-0029 (c) 1989 + California Dreams (Japan)
 
 @source:blocktax.cpp
@@ -10049,6 +10053,9 @@ clshroad                        // (c) 1986 Wood Place Inc.
 clshroadd                       // (c) 1986 Wood Place Inc. (Data East license)
 clshroads                       // (c) 1986 Wood Place Inc. (Status Games license)
 firebatl                        // (c) 1984 Taito
+
+@source:clxvme186.cpp
+clxvme186                       //
 
 @source:cm1800.cpp
 cm1800                          //
@@ -14598,6 +14605,11 @@ lucky8c                         // (c) 1989 Wing Co. Ltd
 lucky8d                         // (c) 1989 Wing Co. Ltd
 lucky8e                         // (c) 1989 Wing Co. Ltd
 lucky8f                         // bootleg?
+lucky8g                         // (c) 1989 Wing Co. Ltd
+lucky8h                         // 1991, hack
+lucky8i                         // 199?, Eagle, licensed by Wing
+lucky8j                         // 199?, hack
+lucky8k                         // (c) 1989 Wing. With CPU NEC D315-5136
 luckybar                        // unknown
 luckylad                        // (c) 1985 Wing Co. Ltd
 magodds                         // 198? (c) Micro Manufacturing Ltd.
@@ -15154,6 +15166,9 @@ stunrunp                        // (proto)          (c) 1989
 @source:harriet.cpp
 harriet                         // 1990
 
+@source:hawk.cpp
+hawk                            // Husky Hawk
+
 @source:hazelgr.cpp
 hg_frd                          // Fruit Deuce
 
@@ -15317,6 +15332,7 @@ ktopgun                         // Konami
 merrycook                       // Elektronika
 nummunch                        // VTech
 nupogodi                        // Elektronika
+spacebridge                     // Elektronika
 taddams                         // Tiger
 taltbeast                       // Tiger
 tapollo13                       // Tiger
@@ -15733,11 +15749,15 @@ ht68k                           //
 amu880                          //
 
 @source:hunter2.cpp
-hunter2                         //
+hunter2                         // Husky Hunter 2
 
 @source:hunter16.cpp
-hunter16                        //
-hunter1680                      //
+hunter16                        // Husky Hunter 16
+hunter216                       // Husky Hunter 2/16
+hunter1680                      // Husky Hunter 16/80
+
+@source:husky.cpp
+husky                           // DVW Husky
 
 @source:hvyunit.cpp
 hvyunit                         // (c) 1988 Kaneko
@@ -16225,6 +16245,7 @@ wfortune                        // (c) 1989 GameTek
 wfortunea                       // (c) 1989 GameTek
 
 @source:itgambl2.cpp
+btorneo                         // (c) 200? unknown
 cmagica                         // (c) 200? unknown
 granfrat                        // (c) 200? unknown
 mcard_h8                        // (c) 200? unknown
@@ -21433,6 +21454,7 @@ roma32                          // Roma
 
 @source:mephisto_mm1.cpp
 mm1
+mm1b
 mmirage
 
 @source:mephisto_mm2.cpp
@@ -21463,6 +21485,9 @@ berl16                          // 1992 Mephisto Berlin 68000
 berlinp                         // 1994 Mephisto Berlin Pro 68020
 berl16l                         // 1996 Mephisto Berlin 68000 London Upgrade
 bpl32                           // 1996 Mephisto Berlin Pro London Upgrade
+
+@source:mephisto_mondial68k.cpp
+mondl68k                        // 1988 Mephisto Mondial 68000XL
 
 @source:mephisto_montec.cpp
 mondial                         // 1985 Mephisto Mondial
@@ -22077,6 +22102,8 @@ mmagic                          // (c) 1979 Nintendo
 
 @source:mmd1.cpp
 mmd1                            //
+
+@source:mmd2.cpp
 mmd2                            //
 
 @source:mmm.cpp
@@ -32969,6 +32996,9 @@ pokemini                        // Nintendo Pokemon Mini
 @source:poker72.cpp
 poker72                         //
 
+@source:pokerout.cpp
+pokerout                        // 19??, unknown
+
 @source:polepos.cpp
 grally                          // bootleg
 polepos                         // (c) 1982
@@ -34180,6 +34210,9 @@ ccdelta1                        //
 @source:saitek_risc2500.cpp
 risc2500                        //
 montreux                        //
+
+@source:saitek_ssystem3.cpp
+ssystem3                        // Chess Champion Super System III / MK III
 
 @source:saitek_stratos.cpp
 stratos
@@ -35982,6 +36015,10 @@ trvhanga                        // (c) 1984 SMS MFG CORP
 snes                            // Nintendo Super Nintendo NTSC
 snespal                         // Nintendo Super Nintendo PAL
 
+@source:snesb51.cpp
+mk3snes
+snes4sl
+
 @source:snesb.cpp
 denseib                         // bootleg
 denseib2                        // bootleg
@@ -35990,7 +36027,6 @@ ffight2b                        // bootleg
 iron                            // bootleg
 legendsb                        // bootleg
 kinstb                          // bootleg
-mk3snes                         // bootleg
 rushbets                        // bootleg
 sblast2b                        // bootleg
 venom                           // bootleg
@@ -36466,9 +36502,6 @@ vasara                          // (c) 2000 Visco
 vasara2                         // (c) 2001 Visco
 vasara2a                        // (c) 2001 Visco
 
-@source:ssystem3.cpp
-ssystem3                        // Chess Champion Super System III / MK III
-
 @source:st_mp100.cpp
 dracula                         //
 hothand                         //
@@ -36860,6 +36893,7 @@ starfigh                        // (c) 1990 SunA
 
 @source:sunplus_gcm394.cpp
 smartfp                         // Smart Fit Park
+wlsair60                        // Wireless Air 60
 wrlshunt                        // Wireless: Hunting Video Game System
 
 @source:supbtime.cpp
@@ -37014,8 +37048,8 @@ tvlinkp                         //
 svmu                            // 1998 Sega Visual Memory Unit
 
 @source:swtpc.cpp
-swtpc                           //
-swtpcm                          //
+swtpc                           // MPA2 MPS Swtbug rom - FLEX
+swtpcm                          // MPA2 MPC Mikbug rom
 
 @source:swtpc09.cpp
 swtpc09                         // S09, DMF2 Floppy SBUG rom - FLEX
@@ -38202,6 +38236,7 @@ prmrsocr                        // GX101 (c) 1993 (Europe)
 prmrsocrj                       // GX101 (c) 1993 (Japan)
 punkshot                        // GX907 (c) 1990 (US)
 punkshot2                       // GX907 (c) 1990 (US)
+punkshot2e                      // GX907 (c) 1990 (World)
 punkshotj                       // GX907 (c) 1990 (Japan)
 qgakumon                        // GX248 (c) 1993 (Japan)
 ssriders                        // GX064 (c) 1991 (World)
@@ -39177,7 +39212,6 @@ jak_sbfc                        //
 lexizeus                        // Lexibook
 vii                             // KenSingTon / Jungle Soft / Siatronics Vii
 wirels60                        // Wireless 60
-wlsair60                        // Wireless Air 60
 zone40                          // Zone 40
 zone60                          // Zone 60
 rad_skat                        //

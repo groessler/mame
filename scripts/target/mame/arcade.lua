@@ -328,6 +328,7 @@ VIDEOS["MB90082"] = true
 VIDEOS["MB_VCU"] = true
 VIDEOS["MC6845"] = true
 --VIDEOS["MC6847"] = true
+--VIDEOS["MD4330B"] = true
 --VIDEOS["MM5445"] = true
 --VIDEOS["MSM6222B"] = true
 --VIDEOS["MSM6255"] = true
@@ -446,7 +447,8 @@ MACHINES["DS1204"] = true
 MACHINES["DS1205"] = true
 MACHINES["DS1302"] = true
 --MACHINES["DS1315"] = true
---MACHINES["DS1386"] = true
+MACHINES["DS1386"] = true
+MACHINES["DS17X85"] = true
 MACHINES["DS1994"] = true
 MACHINES["DS2401"] = true
 MACHINES["DS2404"] = true
@@ -557,6 +559,8 @@ MACHINES["OUTPUT_LATCH"] = true
 MACHINES["PC_FDC"] = true
 MACHINES["PC_LPT"] = true
 --MACHINES["PCCARD"] = true
+--MACHINES["PCF8583"] = true
+MACHINES["PCF8584"] = true
 MACHINES["PCF8593"] = true
 MACHINES["PCI"] = true
 MACHINES["PCKEYBRD"] = true
@@ -3068,6 +3072,7 @@ files {
 	MAME_DIR .. "src/mame/video/punchout.cpp",
 	MAME_DIR .. "src/mame/drivers/famibox.cpp",
 	MAME_DIR .. "src/mame/drivers/sfcbox.cpp",
+	MAME_DIR .. "src/mame/drivers/snesb51.cpp",
 	MAME_DIR .. "src/mame/drivers/snesb.cpp",
 	MAME_DIR .. "src/mame/drivers/spacefb.cpp",
 	MAME_DIR .. "src/mame/includes/spacefb.h",
@@ -4843,6 +4848,7 @@ files {
 	MAME_DIR .. "src/mame/audio/polyplay.cpp",
 	MAME_DIR .. "src/mame/video/polyplay.cpp",
 	MAME_DIR .. "src/mame/drivers/poker72.cpp",
+	MAME_DIR .. "src/mame/drivers/pokerout.cpp",
 	MAME_DIR .. "src/mame/drivers/potgoldu.cpp",
 	MAME_DIR .. "src/mame/drivers/proconn.cpp",
 	MAME_DIR .. "src/mame/drivers/pse.cpp",

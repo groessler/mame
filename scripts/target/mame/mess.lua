@@ -349,6 +349,7 @@ VIDEOS["IMS_CVC"] = true
 --VIDEOS["MB_VCU"] = true
 VIDEOS["MC6845"] = true
 VIDEOS["MC6847"] = true
+VIDEOS["MD4330B"] = true
 VIDEOS["MM5445"] = true
 VIDEOS["MSM6222B"] = true
 VIDEOS["MSM6255"] = true
@@ -454,6 +455,7 @@ MACHINES["DP8573"] = true
 MACHINES["DS1302"] = true
 MACHINES["DS1315"] = true
 MACHINES["DS1386"] = true
+MACHINES["DS17X85"] = true
 MACHINES["DS2401"] = true
 MACHINES["DS2404"] = true
 MACHINES["DS75160A"] = true
@@ -567,6 +569,7 @@ MACHINES["PC_FDC"] = true
 MACHINES["PC_LPT"] = true
 MACHINES["PCCARD"] = true
 MACHINES["PCF8583"] = true
+--MACHINES["PCF8584"] = true
 MACHINES["PCF8593"] = true
 MACHINES["PCI"] = true
 MACHINES["PCKEYBRD"] = true
@@ -1021,6 +1024,7 @@ FORMATS["TVC_CAS"] = true
 FORMATS["TVC_DSK"] = true
 FORMATS["TZX_CAS"] = true
 FORMATS["UEF_CAS"] = true
+FORMATS["UNIFLEX_DSK"] = true
 FORMATS["UPD765_DSK"] = true
 FORMATS["VDK_DSK"] = true
 FORMATS["VECTOR06_DSK"] = true
@@ -1130,6 +1134,7 @@ function linkProjects_mame_mess(_target, _subtarget)
 		"homebrew",
 		"homelab",
 		"hp",
+		"husky",
 		"ibm6580",
 		"ie15",
 		"imp",
@@ -2307,6 +2312,7 @@ files {
 	MAME_DIR .. "src/mame/drivers/mephisto_mm2.cpp",
 	MAME_DIR .. "src/mame/drivers/mephisto_modena.cpp",
 	MAME_DIR .. "src/mame/drivers/mephisto_modular.cpp",
+	MAME_DIR .. "src/mame/drivers/mephisto_mondial68k.cpp",
 	MAME_DIR .. "src/mame/drivers/mephisto_montec.cpp",
 	MAME_DIR .. "src/mame/drivers/mephisto_polgar.cpp",
 	MAME_DIR .. "src/mame/machine/mmboard.cpp",
@@ -2388,6 +2394,14 @@ files {
 createMESSProjects(_target, _subtarget, "heurikon")
 files {
 	MAME_DIR .. "src/mame/drivers/hk68v10.cpp",
+}
+
+createMESSProjects(_target, _subtarget, "husky")
+files {
+	MAME_DIR .. "src/mame/drivers/hawk.cpp",
+	MAME_DIR .. "src/mame/drivers/hunter2.cpp",
+	MAME_DIR .. "src/mame/drivers/hunter16.cpp",
+	MAME_DIR .. "src/mame/drivers/husky.cpp",
 }
 
 createMESSProjects(_target, _subtarget, "ibm6580")
@@ -2751,6 +2765,8 @@ files {
 	MAME_DIR .. "src/mame/machine/pc9801_kbd.h",
 	MAME_DIR .. "src/mame/machine/pc9801_cd.cpp",
 	MAME_DIR .. "src/mame/machine/pc9801_cd.h",
+	MAME_DIR .. "src/mame/machine/pc9801_memsw.cpp",
+	MAME_DIR .. "src/mame/machine/pc9801_memsw.h",
 	MAME_DIR .. "src/mame/drivers/tk80bs.cpp",
 }
 
@@ -3073,6 +3089,7 @@ files {
 	MAME_DIR .. "src/mame/drivers/saitek_delta1.cpp",
 	MAME_DIR .. "src/mame/drivers/saitek_risc2500.cpp",
 	MAME_DIR .. "src/mame/includes/saitek_stratos.h",
+	MAME_DIR .. "src/mame/drivers/saitek_ssystem3.cpp",
 	MAME_DIR .. "src/mame/drivers/saitek_stratos.cpp",
 	MAME_DIR .. "src/mame/drivers/saitek_corona.cpp", -- subdriver of saitek_stratos
 	MAME_DIR .. "src/mame/drivers/saitek_superstar.cpp",
@@ -3893,6 +3910,7 @@ files {
 	MAME_DIR .. "src/mame/machine/cit101_kbd.cpp",
 	MAME_DIR .. "src/mame/machine/cit101_kbd.h",
 	MAME_DIR .. "src/mame/drivers/cit220.cpp",
+	MAME_DIR .. "src/mame/drivers/clxvme186.cpp",
 	MAME_DIR .. "src/mame/drivers/codata.cpp",
 	MAME_DIR .. "src/mame/drivers/controlid.cpp",
 	MAME_DIR .. "src/mame/drivers/cortex.cpp",
@@ -3963,8 +3981,6 @@ files {
 	MAME_DIR .. "src/mame/drivers/hprot1.cpp",
 	MAME_DIR .. "src/mame/drivers/hpz80unk.cpp",
 	MAME_DIR .. "src/mame/drivers/ht68k.cpp",
-	MAME_DIR .. "src/mame/drivers/hunter2.cpp",
-	MAME_DIR .. "src/mame/drivers/hunter16.cpp",
 	MAME_DIR .. "src/mame/drivers/i7000.cpp",
 	MAME_DIR .. "src/mame/drivers/ibm3153.cpp",
 	MAME_DIR .. "src/mame/drivers/icatel.cpp",
@@ -4009,6 +4025,7 @@ files {
 	MAME_DIR .. "src/mame/drivers/minitel_2_rpic.cpp",
 	MAME_DIR .. "src/mame/drivers/ml20.cpp",
 	MAME_DIR .. "src/mame/drivers/mmd1.cpp",
+	MAME_DIR .. "src/mame/drivers/mmd2.cpp",
 	MAME_DIR .. "src/mame/drivers/mod8.cpp",
 	MAME_DIR .. "src/mame/drivers/modellot.cpp",
 	MAME_DIR .. "src/mame/drivers/molecular.cpp",
@@ -4066,9 +4083,6 @@ files {
 	MAME_DIR .. "src/mame/includes/softbox.h",
 	MAME_DIR .. "src/mame/drivers/squale.cpp",
 	MAME_DIR .. "src/mame/drivers/solbourne.cpp",
-	MAME_DIR .. "src/mame/drivers/ssystem3.cpp",
-	MAME_DIR .. "src/mame/includes/ssystem3.h",
-	MAME_DIR .. "src/mame/video/ssystem3.cpp",
 	MAME_DIR .. "src/mame/drivers/swyft.cpp",
 	MAME_DIR .. "src/mame/drivers/symbolics.cpp",
 	MAME_DIR .. "src/mame/drivers/sys2900.cpp",

@@ -994,6 +994,18 @@ end
 
 ---------------------------------------------------
 --
+--@src/devices/machine/ds17x85.h,MACHINES["DS17X85"] = true
+---------------------------------------------------
+
+if (MACHINES["DS17X85"]~=null) then
+	files {
+		MAME_DIR .. "src/devices/machine/ds17x85.cpp",
+		MAME_DIR .. "src/devices/machine/ds17x85.h",
+	}
+end
+
+---------------------------------------------------
+--
 --@src/devices/machine/ds1994.h,MACHINES["DS1994"] = true
 ---------------------------------------------------
 
@@ -2250,6 +2262,18 @@ if (MACHINES["PCF8583"]~=null) then
 	files {
 		MAME_DIR .. "src/devices/machine/pcf8583.cpp",
 		MAME_DIR .. "src/devices/machine/pcf8583.h",
+	}
+end
+
+---------------------------------------------------
+--
+--@src/devices/machine/pcf8584.h,MACHINES["PCF8584"] = true
+---------------------------------------------------
+
+if (MACHINES["PCF8584"]~=null) then
+	files {
+		MAME_DIR .. "src/devices/machine/pcf8584.cpp",
+		MAME_DIR .. "src/devices/machine/pcf8584.h",
 	}
 end
 
